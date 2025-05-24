@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Automation Project | Emmanuel Owoeye</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <a href="../index.html" class="back-btn">
+            <i class="fas fa-arrow-left"></i> Back to Portfolio
+        </a>
+    </nav>
+
+    <main class="project-detail">
+        <header>
+            <h1>School Data Automation System</h1>
+            <p class="subtitle">Crescent International School | 2024</p>
+        </header>
+
+        <section class="project-hero">
+            <img src="../assets/images/excel-dashboard.png" alt="Excel Automation Dashboard">
+        </section>
+
+        <div class="project-grid">
+            <section class="project-overview">
+                <h2><i class="fas fa-clipboard-list"></i> Overview</h2>
+                <p>Automated monthly reporting for 200+ students, reducing processing time from 8 hours to 45 minutes.</p>
+                
+                <div class="metrics">
+                    <div class="metric-card">
+                        <div class="metric-value">25%</div>
+                        <div class="metric-label">Time Saved</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-value">60%</div>
+                        <div class="metric-label">Error Reduction</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="project-details">
+                <h2><i class="fas fa-tasks"></i> Challenges</h2>
+                <ul>
+                    <li>Manual data entry caused frequent calculation errors</li>
+                    <li>Reports took 2-3 days to verify</li>
+                    <li>Version control issues with multiple editors</li>
+                </ul>
+
+                <h2><i class="fas fa-cogs"></i> Solution</h2>
+                <div class="solution-steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <p>Created Excel templates with locked formulas</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <p>Developed VBA macros for automated PDF generation</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <p>Integrated SQL queries for live data updates</p>
+                    </div>
+                </div>
+
+                <div class="code-sample">
+                    <h3><i class="fas fa-code"></i> Key Macro:</h3>
+                    <pre><code>Sub GenerateReports()
+    ' Connect to SQL database
+    Dim conn As ADODB.Connection
+    Set conn = New ADODB.Connection
+    conn.Open "Provider=SQLOLEDB;Data Source=SchoolDB;"
+    
+    ' Pull attendance data
+    Dim rs As ADODB.Recordset
+    Set rs = conn.Execute("SELECT * FROM Attendance WHERE Month=" & MonthBox.Value)
+    
+    ' Generate PDF
+    Sheets("Report").ExportAsFixedFormat Type:=xlTypePDF, _
+        Filename:="Reports\Attendance_" & Format(Date, "yyyymm") & ".pdf"
+    
+    MsgBox "Report generated successfully!", vbInformation
+End Sub</code></pre>
+                </div>
+            </section>
+
+            <section class="project-resources">
+                <h2><i class="fas fa-download"></i> Resources</h2>
+                <a href="../assets/pdfs/excel-automation-guide.pdf" class="resource-card">
+                    <i class="fas fa-file-pdf"></i>
+                    <span>Implementation Guide (PDF)</span>
+                </a>
+                <a href="#" class="resource-card" onclick="showVideo()">
+                    <i class="fas fa-video"></i>
+                    <span>Demo Video (30 sec)</span>
+                </a>
+            </section>
+        </div>
+    </main>
+
+    <script>
+        function showVideo() {
+            alert("Demo video would play here\n\n(Record a short Loom video showing the automation in action)");
+        }
+    </script>
+</body>
+</html>

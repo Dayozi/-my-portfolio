@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emmanuel Owoeye | IT Specialist & Front-End Developer</title>
+    <meta name="description" content="IT Specialist with Distinction in Computer Science, specializing in Network Management, Technical Writing, and Front-End Development">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">Emmanuel Owoeye</div>
+            <ul>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Theme Toggle -->
+    <button class="theme-toggle" id="themeToggle">🌓</button>
+
+    <!-- Hero Section -->
+    <section id="home">
+        <div class="hero-content">
+            <h1>Emmanuel Owoeye</h1>
+            <h2>IT Specialist & Front-End Developer</h2>
+            <p>Building robust IT solutions with a focus on network management, technical writing, and user-centric development</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn">View My Work</a>
+                <a href="#" class="btn btn-outline" onclick="downloadCV()">Download CV</a>
+            </div>
+        </div>
+        <div class="scroll-down" onclick="scrollToSection('about')">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Me</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Hello! I'm Emmanuel Owoeye, an IT Specialist with a Distinction in Computer Science, specializing in Network Management (CCNA), Technical Writing, and Front-End Development.</p>
+                    <p>With experience across educational institutions and private organizations, I've developed expertise in optimizing ICT operations, leading technical teams, and implementing efficient systems that drive productivity.</p>
+                    
+                    <div class="professional-highlights">
+                        <div class="highlight-item">
+                            <div class="highlight-icon">
+                                <i class="fas fa-network-wired"></i>
+                            </div>
+                            <div>
+                                <h3>Network Management</h3>
+                                <p>CCNA certified with hands-on experience in routing, switching, and troubleshooting complex networks.</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                            <div>
+                                <h3>Development</h3>
+                                <p>Skilled in HTML, CSS, SQL, and PHP/MySQL for building practical solutions like HR Management Systems.</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div>
+                                <h3>Process Optimization</h3>
+                                <p>Proven track record of automating workflows and improving efficiency by 25-40% in various roles.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="assets/images/profile.jpg" alt="Emmanuel Owoeye">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2>Technical Skills</h2>
+            </div>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3><i class="fas fa-network-wired"></i> Networking</h3>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">CCNA (Routing & Switching)</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Network Troubleshooting</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Hardware Maintenance</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Development</h3>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">HTML/CSS</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">SQL</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 75%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">PHP/MySQL</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 70%;"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> Tools & Soft Skills</h3>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Microsoft Office</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Technical Writing</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Leadership</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2>Professional Experience</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2024 – Present</div>
+                        <h3 class="timeline-title">ICT Officer</h3>
+                        <div class="timeline-company">Crescent International School, Kano</div>
+                        <ul>
+                            <li>Manage ICT infrastructure, ensuring 95% uptime for 200+ users</li>
+                            <li>Optimize data management using Excel and SQL, reducing reporting time by 25%</li>
+                            <li>Implement network security measures and user training programs</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2023</div>
+                        <h3 class="timeline-title">Technical Lead (NYSC)</h3>
+                        <div class="timeline-company">Kogi State Polytechnic, Lokoja</div>
+                        <ul>
+                            <li>Led IT operations, improving workflow efficiency by 30%</li>
+                            <li>Automated document processing, cutting manual tasks by 40%</li>
+                            <li>Trained staff on effective use of office productivity tools</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2018 – 2019</div>
+                        <h3 class="timeline-title">ICT Officer</h3>
+                        <div class="timeline-company">Best Learning Caravan Academy, Kano</div>
+                        <ul>
+                            <li>Deployed and maintained 50+ systems and networks</li>
+                            <li>Awarded "Employee of the Term" for resolving critical system failures</li>
+                            <li>Implemented backup solutions and disaster recovery protocols</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2021</div>
+                        <h3 class="timeline-title">Front-End Developer (Project)</h3>
+                        <div class="timeline-company">Hussaini Adamu Federal Polytechnic</div>
+                        <ul>
+                            <li>Built HR Management System using HTML, CSS, and PHP/MySQL (XAMPP environment)</li>
+                            <li>Streamlined institutional HR processes through digital transformation</li>
+                            <li>Collaborated with backend developers for system integration</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Projects</h2>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/project1.jpg" alt="HR Management System">
+                    </div>
+                    <div class="project-info">
+                        <h3>HR Management System</h3>
+                        <p>A comprehensive solution built with HTML, CSS, and PHP/MySQL to streamline HR processes for educational institutions.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">HTML/CSS</span>
+                            <span class="project-tag">PHP</span>
+                            <span class="project-tag">MySQL</span>
+                        </div>
+                        <a href="#" class="btn">View Details</a>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/project2.jpg" alt="Network Optimization">
+                    </div>
+                    <div class="project-info">
+                        <h3>Network Optimization</h3>
+                        <p>Implemented at Crescent International School to improve network reliability and uptime for 200+ users.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">CCNA</span>
+                            <span class="project-tag">Cisco</span>
+                            <span class="project-tag">Troubleshooting</span>
+                        </div>
+                        <a href="#" class="btn">View Details</a>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/project3.jpg" alt="Data Automation">
+                    </div>
+                    <div class="project-info">
+                        <h3>Data Automation</h3>
+                        <p>Excel and SQL solutions that reduced reporting time by 25% through automated data processing.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Excel</span>
+                            <span class="project-tag">SQL</span>
+                            <span class="project-tag">Automation</span>
+                        </div>
+                        <a href="#" class="btn">View Details</a>
+                    </div>
+                </div>
+                
+                <!-- New Data Automation Project Card -->
+                <a href="projects/data-automation.html" class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/excel-thumbnail.jpg" alt="Data Automation">
+                    </div>
+                    <div class="project-info">
+                        <h3>Data Automation</h3>
+                        <p>Excel/SQL system for school reports</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Excel</span>
+                            <span class="project-tag">SQL</span>
+                            <span class="project-tag">Automation</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>Client Testimonials</h2>
+            </div>
+            <div class="testimonials-container">
+                <div class="testimonials" id="testimonialsSlider">
+                    <div class="testimonial-card">
+                        <div class="testimonial-quote">
+                            Exceptional work on our network infrastructure project. Emmanuel delivered ahead of schedule with excellent communication throughout the process. His technical expertise and problem-solving skills were invaluable.
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Client">
+                            <div>
+                                <h4>John Smith</h4>
+                                <p>CEO, TechCorp</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-quote">
+                            Emmanuel transformed our data workflow with custom Excel solutions that saved us 20+ hours weekly. His ability to understand our needs and deliver efficient solutions is remarkable. Highly recommend his services!
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Client">
+                            <div>
+                                <h4>Sarah Johnson</h4>
+                                <p>Operations Manager</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-quote">
+                            The HR Management System developed by Emmanuel significantly improved our institutional processes. His attention to detail and commitment to delivering quality work made all the difference in this project.
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Client">
+                            <div>
+                                <h4>Michael Chen</h4>
+                                <p>Director, Hussaini Adamu Federal Polytechnic</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-nav">
+                    <div class="testimonial-dot active" onclick="goToTestimonial(0)"></div>
+                    <div class="testimonial-dot" onclick="goToTestimonial(1)"></div>
+                    <div class="testimonial-dot" onclick="goToTestimonial(2)"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Location</h3>
+                            <p>Naibawa Zaira Road, Kumbotso, Kano State, Nigeria</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p><a href="mailto:emmanuelowoeyet@gmail.com">emmanuelowoeyet@gmail.com</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Phone</h3>
+                            <p><a href="tel:+2347067562114">+234 706 756 2114</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>LinkedIn</h3>
+                            <p><a href="https://www.linkedin.com/in/emmanuel-owoeye-886992276/" target="_blank">linkedin.com/in/emmanuel-owoeye</a></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Subject">
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <h2>Emmanuel Owoeye</h2>
+            <p>IT Specialist & Front-End Developer</p>
+            
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/emmanuel-owoeye-886992276/" class="social-link" target="_blank">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="#" class="social-link">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="#" class="social-link">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="mailto:emmanuelowoeyet@gmail.com" class="social-link">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+            
+            <div class="copyright">
+                &copy; <span id="year"></span> Emmanuel Owoeye. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
